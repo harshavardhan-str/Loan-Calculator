@@ -16,22 +16,27 @@ export const ChartManager = {
                 scales: {
                     x: {
                         stacked: true,
-                        grid: { color: 'rgba(255, 255, 255, 0.05)' },
-                        ticks: { color: '#94a3b8', maxTicksLimit: 12 }
+                        grid: { color: 'rgba(0, 0, 0, 0.05)' },
+                        ticks: { color: '#64748b', maxTicksLimit: 12 }
                     },
                     y: {
                         stacked: true,
-                        grid: { color: 'rgba(255, 255, 255, 0.05)' },
-                        ticks: { color: '#94a3b8' }
+                        grid: { color: 'rgba(0, 0, 0, 0.05)' },
+                        ticks: { color: '#64748b' }
                     }
                 },
                 plugins: {
                     legend: {
-                        labels: { color: '#f8fafc' }
+                        labels: { color: '#1e293b' }
                     },
                     tooltip: {
                         mode: 'index',
                         intersect: false,
+                        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                        titleColor: '#0f172a',
+                        bodyColor: '#334155',
+                        borderColor: '#e2e8f0',
+                        borderWidth: 1
                     }
                 }
             }
@@ -71,14 +76,14 @@ export const ChartManager = {
                 {
                     label: 'Principal Paid',
                     data: principalData,
-                    backgroundColor: '#6366f1',
-                    borderRadius: 2
+                    backgroundColor: '#3b82f6', // Modern Blue
+                    borderRadius: 4
                 },
                 {
                     label: 'Interest Paid',
                     data: interestData,
-                    backgroundColor: '#ec4899',
-                    borderRadius: 2
+                    backgroundColor: '#f59e0b', // Amber
+                    borderRadius: 4
                 }
             ]
         };
